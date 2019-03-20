@@ -43,7 +43,7 @@ echo -e ' \033[44;1;37m Preparando Apps do Gnome\033[0m'
 echo '--------------------------------------------------------------------'
 
 unzip Paper.zip
-unzip materia-thme.zip
+unzip materia-theme.zip
 unzip desktop-icons@csoriano.zip
 
 chmod +x apps_fedora.sh
