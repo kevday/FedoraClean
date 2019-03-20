@@ -1,7 +1,7 @@
 # FedoraClean
 Script de instalação customizada do Gnome-Shell para o Fedora Minimal
 
-## Considerações:
+### Considerações:
 
  * Foi utilizado no Fedora 29 com instalação minima, e habilitado ´sudo´ para o usuário.
  * São 3 scripts, install.sh responsavel por instalar o X e Gnome-Shell,
@@ -14,7 +14,7 @@ swap.sh que é carregado no final do script app_fedora.sh para criar o /swapfile
  mas ficarei muito feliz se houver correções, melhorias e sugestões.
  * Não utilize o usuário root.
  
- ## Como usar após formatar:
+ ### Como usar após formatar:
  
 ´´´sh
 $ sudo dnf install git 
@@ -23,14 +23,14 @@ $ cd FedoraClean/
 $ chmod +x install.sh
 $ ./install.sh
 ´´´
-## Print Screens
+### Print Screens
 
 ...
 
-## Fontes:
-http://kevin.net.br
-https://getfedora.org/
-https://github.com/benmat/fedora-install
-https://github.com/snwh/paper-icon-theme
-https://github.com/nana-4/materia-theme
-https://gitlab.gnome.org/World/ShellExtensions/desktop-icons
+### Fontes:
+Fedora: https://getfedora.org/ 
+Minha pagina pessoal: http://kevin.net.br 
+Tema: https://github.com/nana-4/materia-theme 
+Icones: https://github.com/snwh/paper-icon-theme 
+A ideia original: https://github.com/benmat/fedora-install 
+Extenção do Gnome: https://gitlab.gnome.org/World/ShellExtensions/desktop-icons 
