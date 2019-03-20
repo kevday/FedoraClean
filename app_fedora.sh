@@ -43,14 +43,14 @@ echo -e ' \033[44;1;37m Instalado extenções do Gnome \033[0m'
 echo '--------------------------------------------------------------------'
 sudo dnf install gnome-shell-extension-dash-to-dock
 
-sudo mv -R desktop-icons@csoriano/ /usr/share/gnome-shell/extensions/
+sudo mv desktop-icons@csoriano/ /usr/share/gnome-shell/extensions/
 
 notify-send 'Decoração' 'Instalando os temas e icones!'
 clear
 echo -e ' \033[44;1;37m Temas e icones \033[0m'
 echo '--------------------------------------------------------------------'
 
-sudo cp -R Paper/ /etc/share/themes/
+sudo cp -R Paper/ /usr/share/icons/
 sudo gsettings set org.gnome.desktop.interface icon-theme "Paper"
 sudo gsettings set org.gnome.desktop.interface cursor-theme "Paper"
 
@@ -62,8 +62,8 @@ sudo gsettings reset org.gnome.desktop.wm.preferences theme
 sudo gsettings set org.gnome.desktop.interface gtk-theme "Materia-compact"
 sudo gsettings set org.gnome.desktop.wm.preferences theme "Materia-compact"
 
-mv linux_logo.tga ~/Imagens
-mv bash.jpg ~/Imagens
+cd ~/FedoraClear
+mv k_logo.tga ~/Imagens
 mv Brasil-Flag.jpg ~/Imagens
 mv fedoraclean.png ~/Imagens
 sudo gsettings get org.gnome.desktop.background picture-uri 'file:~/Imagens/fedoraclean.png' 
@@ -73,17 +73,18 @@ sudo gsettings get org.gnome.desktop.background picture-uri 'file:~/Imagens/fedo
 #notify-send 'Monitor' 'Corrigindo configuração dos monitores...!'
 sudo cp ~/.config/monitors.xml ~gdm/.config/
 
-
-clear
-echo -e ' \033[44;1;37m Add swapfile 4GB \033[0m'
-echo '--------------------------------------------------------------------'
-sudo dd if=/dev/zero of=/swapfile bs=1024 count=4194304
-sudo mkswap /swapfile 
-sudo swapon /swapfile
-echo '/swapfile swap swap defaults 0 0' >> /etc/fstab
-sudo mkdir /root Desktop Documentos Downloads Imagens Música Vídeos
+cd ~/fedoraclear
+cd ~/FedoraClear
+chmod +x swap.sh
+sudo su -c ./swap.sh
 
 notify-send 'Concluido' 'Reiniciando em 60 segundos'
-free .-ht
+
+clear
+free -ht
+echo -e ' \033[44;1;37m'
 read -rsp $'Aperte alguma tecla ou aguarde 60 segundos para reiniciar...\n' -n 1 -t 60;
+echo -e ' \033[0m'
 sudo reboot
+
+

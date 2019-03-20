@@ -24,8 +24,8 @@ curl -s -O https://download.virtualbox.org/virtualbox/6.0.4/Oracle_VM_VirtualBox
 clear
 echo -e ' \033[44;1;37m Apps de Terminal \033[0m'
 echo '--------------------------------------------------------------------'
-sudo dnf install -y nano-3.0-2.fc29.x86_64
-sudo dnf install -y zip
+sudo dnf install -y nano
+sudo dnf install -y zip p7zip tar
 sudo dnf install -y git
 
 #dnf install gtkmm24dnf kernel-headers kernel-devel gcc glibc-headers
@@ -42,9 +42,7 @@ clear
 echo -e ' \033[44;1;37m Preparando Apps do Gnome\033[0m'
 echo '--------------------------------------------------------------------'
 
-unzip Paper.zip
-unzip materia-theme.zip
-unzip desktop-icons@csoriano.zip
+tar -axf *.tar.xz
 
 chmod +x app_fedora.sh
 
