@@ -3,7 +3,7 @@ Script de instalação customizada do Gnome-Shell para o Fedora Minimal
 
 ### Considerações:
 
- * Foi utilizado no Fedora 29 com instalação minima, e habilitado ´sudo´ para o usuário.
+ * Foi utilizado no Fedora 29 com instalação minima, e habilitado `sudo` para o usuário.
  * São 3 scripts, install.sh responsavel por instalar o X e Gnome-Shell,
 app_fedora.sh deve ser executado manualmente no terminal apos carregar o Gnome e o
 swap.sh que é carregado no final do script app_fedora.sh para criar o /swapfile.
