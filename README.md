@@ -16,13 +16,15 @@ swap.sh que é carregado no final do script app_fedora.sh para criar o /swapfile
  
  ### Como usar após formatar:
  
-´´´sh
+ 
+```sh
 $ sudo dnf install git 
 $ git clone git://github.com/kevday/FedoraClean.git
 $ cd FedoraClean/
 $ chmod +x install.sh
 $ ./install.sh
-´´´
+```
+ 
 ### Print Screens
 
 ...
