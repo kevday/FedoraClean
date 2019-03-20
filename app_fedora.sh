@@ -50,29 +50,28 @@ clear
 echo -e ' \033[44;1;37m Temas e icones \033[0m'
 echo '--------------------------------------------------------------------'
 
-cp -R Paper/ /etc/share/themes/
-gsettings set org.gnome.desktop.interface icon-theme "Paper"
-gsettings set org.gnome.desktop.interface cursor-theme "Paper"
+sudo cp -R Paper/ /etc/share/themes/
+sudo gsettings set org.gnome.desktop.interface icon-theme "Paper"
+sudo gsettings set org.gnome.desktop.interface cursor-theme "Paper"
 
 cd materia-theme
 chmod +x install.sh
 sudo ./install.sh
-gsettings reset org.gnome.desktop.interface gtk-theme
-gsettings reset org.gnome.desktop.wm.preferences theme
-gsettings set org.gnome.desktop.interface gtk-theme "Materia-compact"
-gsettings set org.gnome.desktop.wm.preferences theme "Materia-compact"
+sudo gsettings reset org.gnome.desktop.interface gtk-theme
+sudo gsettings reset org.gnome.desktop.wm.preferences theme
+sudo gsettings set org.gnome.desktop.interface gtk-theme "Materia-compact"
+sudo gsettings set org.gnome.desktop.wm.preferences theme "Materia-compact"
 
 mv linux_logo.tga ~/Imagens
 mv bash.jpg ~/Imagens
 mv Brasil-Flag.jpg ~/Imagens
 mv fedoraclean.png ~/Imagens
-gsettings get org.gnome.desktop.background picture-uri 'file:~/Imagens/fedoraclean.png' 
+sudo gsettings get org.gnome.desktop.background picture-uri 'file:~/Imagens/fedoraclean.png' 
 
 
 # uso 2 monitores e o comando abaixo copia a configuração do monitor ocorrera uma mensagemde erro que pode ser ignorada em caso de monitor único
 #notify-send 'Monitor' 'Corrigindo configuração dos monitores...!'
 sudo cp ~/.config/monitors.xml ~gdm/.config/
-rm -f ~/.config/autostart/app_fedora.desktop
 
 
 clear
@@ -87,4 +86,4 @@ sudo mkdir /root Desktop Documentos Downloads Imagens Música Vídeos
 notify-send 'Concluido' 'Reiniciando em 60 segundos'
 free .-ht
 read -rsp $'Aperte alguma tecla ou aguarde 60 segundos para reiniciar...\n' -n 1 -t 60;
-reset
+sudo reboot
