@@ -46,7 +46,7 @@ unzip Paper.zip
 unzip materia-theme.zip
 unzip desktop-icons@csoriano.zip
 
-chmod +x apps_fedora.sh
+chmod +x app_fedora.sh
 
 mv VirtualBox-6.0-6.0.4_128413_fedora29-1.x86_64.rpm ~/Desktop/
 mv Oracle_VM_VirtualBox_Extension_Pack-6.0.4.vbox-extpack ~/Desktop/
