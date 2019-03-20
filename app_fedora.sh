@@ -39,7 +39,7 @@ sudo dnf install okular
 
 notify-send 'Extenções' 'Extenções, deveria vir por padrão no Gnome, mas vamos lá...'
 clear
-echo -e ' \033[44;1;37m Instalado estenções do Gnome \033[0m'
+echo -e ' \033[44;1;37m Instalado extenções do Gnome \033[0m'
 echo '--------------------------------------------------------------------'
 sudo dnf install gnome-shell-extension-dash-to-dock
 
