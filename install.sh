@@ -24,10 +24,11 @@ curl -s -O https://download.virtualbox.org/virtualbox/6.0.4/Oracle_VM_VirtualBox
 clear
 echo -e ' \033[44;1;37m Sistema e terminal \033[0m'
 echo '--------------------------------------------------------------------'
-sudo dnf install -y nano
-sudo dnf install -y zip p7zip tar
-sudo dnf install -y git
 sudo dnf install -y cups cups system-config-printer # comente caso não use impressoras
+sudo dnf install -y nano
+sudo dnf install -y zip tar
+sudo dnf install -y git
+sudo dnf install -y p7zip # no RHEL8 não possui esse pacote
 #sudo dnf install gtkmm24dnf kernel-headers kernel-devel gcc glibc-headers
 #sudo dnf install elfutils-libelf-devel
 
@@ -36,8 +37,8 @@ echo -e ' \033[44;1;37m Gnome Shell + X \033[0m'
 echo '--------------------------------------------------------------------'
 sudo dnf install -y @base-x gnome-shell
 clear
-
 sudo dnf install -y gnome-terminal dejavu-sans-mono-fonts bash-completion
+
 clear
 echo -e ' \033[44;1;37m Preparando Apps do Gnome\033[0m'
 echo '--------------------------------------------------------------------'
