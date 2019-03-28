@@ -30,9 +30,12 @@ $ ./install.sh
 ...
 
 ### Fontes:
-Fedora: https://getfedora.org/ 
-Minha pagina pessoal: http://kevin.net.br 
 Tema: https://github.com/nana-4/materia-theme 
 Icones: https://github.com/snwh/paper-icon-theme 
 Extenção do Gnome: https://gitlab.gnome.org/World/ShellExtensions/desktop-icons 
 A ideia original: https://github.com/benmat/fedora-install 
+
+### Recomendações:
+Fedora: https://getfedora.org/ 
+Minha pagina pessoal: http://kevin.net.br 
+Comunidade Fedora Brasil: https://fedorabr.org/
